@@ -35,6 +35,7 @@ class LocationEmitter extends Cubit<LocEmitterModel>{
         AppInfoModel data1 = AppInfoModel.fromJson(jsonDecode(value.body));
         infoM = data1;
         print('data - ${data1.toString()}');
+        // fgtg
         if ('${data1.status}' == '1') {
           prefs.setString('app_currency', '${data1.currencySign}');
           prefs.setString('app_referaltext', '${data1.refertext}');
